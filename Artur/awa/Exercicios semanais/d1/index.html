@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href="index.js">
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <input type="email" id="email_C" placeholder="Email">
+    <input type="password" id="password_C" placeholder="Senha">
+    <button onclick="cadastro()">Cadastrar</button>
+    <h1>Login</h1>
+    <input type="email" id="email_L" placeholder="Email">
+    <input type="password" id="password_L" placeholder="Senha">
+    <button onclick="login()">Logar</button><br><br><br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Ezulc7CbAQ?si=d4wxQ3O6snnS91BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+        let usuarios = []
+
+        function cadastro() {
+            let email = document.getElementById("email_C").value.trim()
+            let senha = document.getElementById("password_C").value.trim()
+            let user = {email: email, senha: senha}
+
+            usuarios.push(user)
+        }
+
+        function login() {
+            let email = document.getElementById("email_L").value.trim()
+            let senha = document.getElementById("password_L").value.trim()
+            let user_try = {email: email, senha: senha}
+            
+            //const user = usuarios.filter((user) => user.email === email && user.senha === senha)[0]
+
+            for(let i = 0; i < usuarios.length; i++) {
+                if (user_try.email === usuarios[i].email && user_try.senha === usuarios[i].senha) {
+                    alert("Credenciais corretas")
+                    return
+                }
+            }
+            alert("Credenciais incorretas")
+        }
+    </script>
+
+</body>
+</html>

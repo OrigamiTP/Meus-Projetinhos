@@ -1,0 +1,17 @@
+Dio.me – site de bootcamp sobre qlqr coisa;
+
+Curso em vídeo – canal do yt q apresenta vários tópicos sobre programação em português, com certificado(pago);
+
+FreeCodeCamp – Canal do yt em inglês sobre programação também;
+
+*Atividade*
+
+ - Faça  uma lista de nomes cm sobrenomes e utilize a função filter para procurar apenas os elementos com um sobrenome especifico, vcs deverão procurar um metodo de variaveis do tipo string que verifica se na string há o sobrenome q vcs querem;
+
+ nota.: utilizem dessa nova lista filtrada para adicionar mais sobrenomes usando a função map.
+
+ *Desafio da semana*
+
+ - Fazer um sistema de cadastro e login usando uma lista de objetos;
+
+ - Pesquisa para casa: binary search

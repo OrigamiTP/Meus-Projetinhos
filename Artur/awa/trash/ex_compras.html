@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Chessigma</title>
+    <link rel='stylesheet' href='main.css'>
+    <style>
+        /* div { 
+            width: 120px;           Largura
+            height: 150px;          Altura
+            border: 2px solid black; Borda (espessura, estilo, cor) 
+            padding: 20px;           Espaço interno 
+            margin: 10px;  
+            align-items: center;         
+        /* } */
+        img{
+            width: 100%; /* Imagem estica até o limite do botão */
+            height: 100%;
+            object-fit: cover; /*Faz a imagem preencher sem distorcer*/
+            
+        }
+    .peao {
+        border: 10px solid black;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        transition: transform 0.2s; 
+        padding: 0; /* Remove o preenchimento */
+        background: none; /* Remove o fundo padrão */
+        width: 50px; /* Tamanho do botão */
+        height: 50px;
+    }
+    button:hover {
+        transform: scale(1.1);
+
+    }
+    button:active {
+        transform: scale(0.95);
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Mercadinho de Xadrez</h1>
+
+    <div id="peão">
+        <h2 id="produto1">Peão</h2>
+    <button><img src="/home/polo05/Artur/images.jpeg" alt=""></button>
+    <p>Preço: É UM!</p>
+    <a href="/home/polo05/Artur/comfirmCompra.html"><button onclick="buy()">comprar peão</button></a>
+    </div>
+    <div id="torre">
+        <h2 id="produto2">Torre</h2>
+    <button id="torre"><img src="/home/polo05/Artur/1.jpg" alt=""></button>
+    <p>Preço: É CINCO!</p>
+    <a href="/home/polo05/Artur/comfirmCompra.html"><button onclick="buy()">comprar torre</button></a>
+    </div>
+
+    <h2>Itens comprados</h2>
+    <ul id="lista"></ul>
+    <script>
+        let itensComprados = []
+        function buy() {
+            let comprar = document.getElementById("produto1").value
+
+        }
+    </script>
+</body>
+</html>

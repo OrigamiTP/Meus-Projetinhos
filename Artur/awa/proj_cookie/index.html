@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Cookie Clicker</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+</head>
+<body>
+    <h1>Cookie Clicker</h1>
+    <div id="biscoito">
+        <button onclick="Cookie()">
+        <img src="COOKIE-removebg-preview.png" alt="cookie">
+    </button>
+</div>
+        <h2 id="contador">Cookie: 0</h2>
+        <div id="upgrades">
+            <h2>Upgrades:</h2>
+        <button onclick="Double()">dobro do clique</button>
+        <button onclick="autoclick()">Autoclique</button>
+    </div>
+        
+
+    <script>
+
+        let cookie = 0
+        let cookieperclick = 1
+        let addprice = 1.0
+        
+        function Cookie() {
+            cookie += cookieperclick
+            addCont()
+        }
+            
+        function addCont(){
+            document.getElementById("contador").innerText = "Cookie: " + cookie.toFixed(0)
+        }
+        function Double() {
+            if (cookie >= 10 * addprice){
+                cookie -= 10 * addprice
+                cookieperclick += 1
+                addCont()
+                addprice += 0.2
+    
+            }
+        }
+        function autoclick() {
+            
+        }
+    </script>
+</body>
+</html>

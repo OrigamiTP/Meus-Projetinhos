@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="compras" placeholder="diga um produto">
+    <input type="text" id="qntd" placeholder=" Diga a quantidade">
+    <button onclick="Addproduto()">Adicionar</button><br><br>
+    <input type="text" id="delete" placeholder="remova um item">
+    <button onclick="deletar()" >Deletar item</button>
+    <h1 id="lista_de_prod">Lista de compras</h1>
+    <ul id="lista"></ul>
+
+    <script>
+        let LiProd = []
+
+        function Addproduto() {
+            let compras = document.getElementById("compras").value
+            let qntd = document.getElementById("qntd").value
+            //LiProd.push({compras: compras, qntd: qntd})
+
+            if(!compras || !qntd) {
+                alert("error")
+                return
+            }
+        }
+        
+    </script>
+</body>
+</html>

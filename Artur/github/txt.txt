@@ -1,0 +1,7 @@
+git hub do professor sobre TypeScript:
+
+https://github.com/EduardoB-Programador/TS-studies
+
+Sobre DSA:
+
+https://github.com/EduardoB-Programador/DSA-Learning

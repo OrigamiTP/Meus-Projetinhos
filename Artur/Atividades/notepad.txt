@@ -1,0 +1,23 @@
+API's: 
+
+Conexão servidor-cliente
+
+conecta diferentes linguaens de programaçao
+
+JSON: JavaScript Object Notation
+
+**
+
+Fazendo uma requisição à uma API pública:
+
+const URL = "https://pokeapi.co/api/v2/pokwmon/"
+
+const JSON = await fetch(URL).then((res) => {
+    return res.json
+})
+console.log(JSON)
+
+fetch -> açao assincrona q pega algo
+
+postman -> aplicação para teste de API.
+

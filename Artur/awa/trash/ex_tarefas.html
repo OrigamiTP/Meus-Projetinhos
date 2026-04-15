@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tarefas</h1>
+    <input type="text" id="id" placeholder="ID">
+    <br><br>
+    <input type="text" id="nome" placeholder="Nome da Tarefa">
+    <br><br>
+    <input type="text" id="desc" placeholder="Tarefa">
+    <br><br>
+    <button onclick="add()">Adicionar</button>
+
+    <h2>Lista de tarefas</h2>
+    <ul id="tarefas">
+        
+    </ul>
+
+    <script>
+        let LiTarefas = []
+
+        function add() {
+            let id = document.getElementById("id").value
+            let nome = document.getElementById("nome").value
+            let desc = document.getElementById("desc").value
+
+            LiTarefas.push({id:Number(id), nome: nome, desc: desc})
+
+            loop()
+        }
+
+        function loop() {
+            //document.getElementById("tarefas").innerHTML= ""
+            for(let i = 0; i < LiTarefas.length; i++){
+                document.getElementById("tarefas").innerHTML += "<li>" + "o id é: " + LiTarefas[i].id + " e o nome da tarefa é " + LiTarefas[i].nome + " e a descrição é: " + LiTarefas[i].desc + "</li>"
+                console.log(document.getElementById("tarefas").innerHTML);
+                
+            }
+        }
+    </script>
+</body>
+</html>

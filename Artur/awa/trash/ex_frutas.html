@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="frutas" placeholder="diga uma fruta">
+    <button onclick="AddFruta()">Adicionar</button>
+    <h1 id="lista_de_frutas">Frutas aq</h1>
+
+    <script>
+        let LiFrutas = []
+
+        function AddFruta() {
+            const frutas = document.getElementById("frutas").value
+            LiFrutas.push(frutas)
+        
+            document.getElementById("lista_de_frutas").innerText = LiFrutas.join(", ")
+        }
+    </script>
+</body>
+</html>
